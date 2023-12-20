@@ -8,7 +8,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="script.js" defer></script>
 
@@ -16,27 +19,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container primary-header">
+    <header class="primary-header container">
       <a href="" class="logo">sophisticated</a>
 
-      <button class="mobile-nav-toggle" aria-controls="primary_navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary_navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
 
       <nav class="navbar">
-        <ul class="primary_navigation" id="primary_navigation" data-visible="false">
-          <li class="nav__list-item active"><a href="#" class="nav__link-item">Home</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__link-item">About</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__link-item">Featured</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__link-item">Product</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__link-item">Contact</a></li>
+        <ul
+          class="primary_navigation"
+          id="primary_navigation"
+          data-visible="false"
+        >
+          <li class="nav__list-item active">
+            <a href="#" class="nav__link-item">Home</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link-item">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link-item">Featured</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link-item">Product</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link-item">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero" id="home">
-        <div class="container">
-          <h1 class="primary-title">Maximize Your Performance & Stay Stylish</h1>
-          <p class="tagline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quasi sed neque vel exercitationem mollitia quisquam qui similique minima cupiditate.</p>
+        <div class="container center spacing">
+          <h1 class="primary-title">
+            Maximize Your Performance & Stay Stylish
+          </h1>
+          <p class="tagline">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+            itaque ex provident repellendus velit amet?
+          </p>
           <a href="#" class="btn">see what we have</a>
         </div>
       </section>
@@ -45,15 +73,22 @@
       <!-- About -->
       <section class="about" id="about">
         <div class="container">
-          <h2 class="section-title">About Us</h2>
+          <h2 class="section-title center">About Us</h2>
           <article class="grid">
             <picture>
               <source srcset="img/about-desktop.jpg" media="(min-width:35em)" />
-              <img src="img/about-mobile.jpg" alt="image about for mobile design" />
+              <img
+                src="img/about-mobile.jpg"
+                alt="image about for mobile design"
+              />
             </picture>
-            <div class="about-content">
+            <div class="about-content spacing">
               <h2 class="content-title">Stand out with class</h2>
-              <p class="about-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, minus cupiditate deleniti similique cumque consequatur iste explicabo aliquam illo eius!</p>
+              <p class="about-detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                minus cupiditate deleniti similique cumque consequatur iste
+                explicabo aliquam illo eius!
+              </p>
               <a href="" class="btn">show more</a>
             </div>
           </article>
@@ -64,19 +99,37 @@
       <!--Featured  -->
       <section class="featured" id="featured">
         <div class="container">
-          <h2 class="section-title">Featured Products</h2>
+          <h2 class="section-title center">Featured Products</h2>
           <div class="split">
-            <a href="#">
-              <img src="" alt="" class="featured__item" />
-              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
+            <a href="#" class="featured__item">
+              <img
+                src="img/shoe-4.png"
+                alt="featured images for item"
+                class="featured__img"
+              />
+              <p class="featured__details center">
+                <span class="price">$99</span> shoe-name
+              </p>
             </a>
-            <a href="#">
-              <img src="" alt="" class="featured__item" />
-              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
+            <a href="#" class="featured__item">
+              <img
+                src="img/shoe-5.png"
+                alt="featured images for item"
+                class="featured__img"
+              />
+              <p class="featured__details center">
+                <span class="price">$99</span> shoe-name
+              </p>
             </a>
-            <a href="#">
-              <img src="" alt="" class="featured__item" />
-              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
+            <a href="#" class="featured__item">
+              <img
+                src="img/shoe-6.png"
+                alt="featured images for item"
+                class="featured__img"
+              />
+              <p class="featured__details center">
+                <span class="price">$99</span> shoe-name
+              </p>
             </a>
           </div>
         </div>
@@ -87,13 +140,18 @@
       <section class="collection" id="collection">
         <div class="container">
           <h2 class="section-title">explore more collection</h2>
-          <div class="grid">
+          <div class="grid center">
             <article class="product">
               <picture>
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
 
@@ -102,7 +160,12 @@
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
 
@@ -111,7 +174,12 @@
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
 
@@ -120,7 +188,12 @@
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
 
@@ -129,7 +202,12 @@
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
 
@@ -138,7 +216,12 @@
                 <img src="" alt="" />
               </picture>
               <h3 class="product__title">a really nice shoe</h3>
-              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <p class="product__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur perferendis sit maxime explicabo nostrum aliquid
+                fugiat non fuga enim consequuntur.<span class="price"></span>
+                shoe-name
+              </p>
               <a href="#" class="btn">buy now</a>
             </article>
           </div>
