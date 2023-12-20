@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="primary-container primary-header">
+    <header class="container primary-header">
       <a href="" class="logo">sophisticated</a>
+
       <button class="mobile-nav-toggle" aria-controls="primary_navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
       <nav class="navbar">
         <ul class="primary_navigation" id="primary_navigation" data-visible="false">
           <li class="nav__list-item active"><a href="#" class="nav__link-item">Home</a></li>
@@ -30,95 +32,121 @@
       </nav>
     </header>
     <main>
-      <!-- Home -->
-      <section class="home" id="home">
-        <div class="container split">
-          <div class="section-content spacing">
-            <h2 class="section-title">amazing shoes at an amazing price</h2>
-            <p class="tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem quibusdam ut maxime facere et?</p>
-            <a href="#" class="btn">see what we have</a>
-          </div>
-
-          <a href="#"><img src="img/shoe-6.png" alt="image for home" class="home__img" /></a>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="container">
+          <h1 class="primary-title">Maximize Your Performance & Stay Stylish</h1>
+          <p class="tagline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quasi sed neque vel exercitationem mollitia quisquam qui similique minima cupiditate.</p>
+          <a href="#" class="btn">see what we have</a>
         </div>
       </section>
-      <!-- Akhir Home -->
+      <!-- Akhir Hero -->
 
       <!-- About -->
       <section class="about" id="about">
         <div class="container">
-          <h1 class="primary-title align-txt">About Us</h1>
-          <div class="split">
-            <img src="img/about_img.jpg" alt="image for home" class="home__img" />
-            <div class="section-content spacing">
-              <h2 class="section-title">stand out with class</h2>
-              <p class="tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem quibusdam ut maxime facere et?</p>
-              <a href="#" class="btn">see what we have</a>
+          <h2 class="section-title">About Us</h2>
+          <article class="grid">
+            <picture>
+              <source srcset="img/about-desktop.jpg" media="(min-width:35em)" />
+              <img src="img/about-mobile.jpg" alt="image about for mobile design" />
+            </picture>
+            <div class="about-content">
+              <h2 class="content-title">Stand out with class</h2>
+              <p class="about-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, minus cupiditate deleniti similique cumque consequatur iste explicabo aliquam illo eius!</p>
+              <a href="" class="btn">show more</a>
             </div>
-          </div>
+          </article>
         </div>
       </section>
-      <!-- Akhir about -->
+      <!-- Akhir About -->
 
-      <!-- featured -->
-      <section class="feature align-txt" id="featured">
+      <!--Featured  -->
+      <section class="featured" id="featured">
         <div class="container">
-          <h1 class="primary-title">Featured products</h1>
-          <div class="container grid-container">
-            <a href="#" class="featured__item">
-              <img src="img/shoe-4.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
+          <h2 class="section-title">Featured Products</h2>
+          <div class="split">
+            <a href="#">
+              <img src="" alt="" class="featured__item" />
+              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
             </a>
-            <a href="#" class="featured__item">
-              <img src="img/shoe-5.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
+            <a href="#">
+              <img src="" alt="" class="featured__item" />
+              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
             </a>
-            <a href="#" class="featured__item">
-              <img src="img/shoe-6.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
-            </a>
-            <a href="#" class="featured__item">
-              <img src="img/shoe-11.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
-            </a>
-            <a href="#" class="featured__item">
-              <img src="img/shoe-9.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
-            </a>
-            <a href="#" class="featured__item">
-              <img src="img/shoe-7.png" alt="" />
-              <p class="featured__details"><span class="price">$99</span>shoes-name</p>
+            <a href="#">
+              <img src="" alt="" class="featured__item" />
+              <p class="featured__details"><span class="price">$99</span> shoe-name</p>
             </a>
           </div>
         </div>
       </section>
-      <!-- Akhir featured -->
+      <!-- Akhir Featured -->
 
-      <!-- Awal product -->
-      <section class="our-product align-txt" id="product">
+      <!-- Collection -->
+      <section class="collection" id="collection">
         <div class="container">
-          <h1 class="primary-title">Our Products</h1>
-          <article class="product shoes-red">
-            <img src="img/shoe-1.png" alt="" class="product__img" />
-            <h2 class="section-title">a really nice shoe</h2>
-            <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, asperiores molestiae explicabo commodi ipsa neque quidem inventore earum dolores culpa!</p>
-            <a href="#" class="btn">buy now</a>
-          </article>
-          <article class="product shoes-white">
-            <img src="img/shoe-2.png" alt="" class="product__img" />
-            <h2 class="section-title">a really nice shoe</h2>
-            <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, asperiores molestiae explicabo commodi ipsa neque quidem inventore earum dolores culpa!</p>
-            <a href="#" class="btn">buy now</a>
-          </article>
-          <article class="product shoes-blue">
-            <img src="img/shoe-3.png" alt="" class="product__img" />
-            <h2 class="section-title">a really nice shoe</h2>
-            <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, asperiores molestiae explicabo commodi ipsa neque quidem inventore earum dolores culpa!</p>
-            <a href="#" class="btn">buy now</a>
-          </article>
+          <h2 class="section-title">explore more collection</h2>
+          <div class="grid">
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+
+            <article class="product">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <h3 class="product__title">a really nice shoe</h3>
+              <p class="product__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis sit maxime explicabo nostrum aliquid fugiat non fuga enim consequuntur.<span class="price"></span> shoe-name</p>
+              <a href="#" class="btn">buy now</a>
+            </article>
+          </div>
         </div>
       </section>
-      <!-- Akhir product -->
+      <!-- Akhir Collection -->
+
+      <section class="discount" id="discount"></section>
     </main>
   </body>
 </html>
