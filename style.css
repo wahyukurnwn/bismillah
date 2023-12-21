@@ -1,8 +1,5 @@
 /* ***=====Typography====*** */
 :root {
-  /* font-size */
-
-  /* font-weight */
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -79,12 +76,6 @@ textarea {
   resize: none;
 }
 
-/* Section */
-section {
-  min-height: 100svh;
-  padding-block-start:12em;
-}
-
 /* visually-hidden */
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -99,7 +90,7 @@ section {
 /*=============utilities classes==============*/
 .btn {
   display: inline-block;
-  padding: .8em 1.2em;
+  padding: 0.8em 1.2em;
   background-color: var(--bg-btn-clr, blue);
   color: var(--btn-clr, white);
   border-radius: 0.5em;
@@ -107,34 +98,57 @@ section {
   font-size: 1rem;
   font-weight: var(--fw-700);
   text-transform: uppercase;
-
 }
 
-.spacing > * + *{
+.spacing > * + * {
   margin-top: var(--space, 1em);
 }
 
-
-.center{
+.center {
   text-align: center;
 }
 
-/*---------*** General Styling ***-------*/
-/* ===================================== */
+/* General Styling */
+.nav-container,
 .container {
   width: min(90%, 85em);
   margin-inline: auto;
-  padding: var(--padding, 2em);
-  border: 2px solid firebrick;
 }
 
-/* === Navbar ===*/
+.container {
+  padding: var(--padding, 1.3em);
+  /* border: 2px solid firebrick; */
+}
 
+.primary-title,
+.section-title,
+.content-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: var(--fw-900);
+}
+
+.primary-title {
+  font-size: 2.2rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: var(--mrg-btm, 1em);
+}
+
+.content-title {
+  font-size: 1.25rem;
+}
+
+/* Navbar */
 .primary-header,
 .primary_navigation {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap, 2em);
+  padding-block: 1.25em;
 }
 
 .primary-header {
@@ -168,50 +182,26 @@ section {
 }
 
 .logo {
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.nav__link-item{
+.nav__link-item {
   font-size: 1.25rem;
 }
 
-.primary-title,
-.section-title {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-weight: var(--fw-900);
-  
-}
-
-.primary-title{
-  font-size: 2rem;
-}
-
-.section-title{
-  font-size: 1.4rem;
-  margin-bottom: var(--marbot, 1em);
-}
-
-.content-title{
-  text-transform: uppercase;
-  font-weight: var(--fw-700);
-  
-}
-
-
-/*=== Hero ===*/
+/* --------------------Hero---------------------- */
 .hero {
+  min-height: 100svh;
   color: white;
   background: #222;
+  padding-block-start: 6.5em;
 }
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(img/shoe-3.png), radial-gradient(#444, #666);
+    background: url(img/remove-bg.png), radial-gradient(#444, #666);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -219,87 +209,100 @@ section {
   }
 }
 
+.tagline {
+  font-size: 1.25rem;
+}
 
-/*=== About ===*/
+/* -------------------- About ---------------------- */
 .about {
-  padding: var(--padding, 1em);
-  
+  padding-block-start: 5em;
 }
 
 .grid {
-  max-width: 800px;
-  aspect-ratio: 1;
   display: grid;
+  grid-auto-columns: 1fr;
+  gap: var(--gap, 1.2em);
   grid-template-areas:
     "one"
     "two";
-  grid-auto-columns: 1fr;
-  margin-inline: auto;
-  gap: var(--gap, 1.5rem);
+  /* border: 3px solid red; */
 }
 
 .grid > *:first-child {
   grid-area: one;
 }
-
 .grid > *:last-child {
   grid-area: two;
 }
 
-
-/* === Featured === */
-.split{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: var(--gap, 2em);
-  justify-content: center;
-}
-
-.split > *{
-  flex-basis: 30%;
-  min-width: 14em;
-}
-
-
-.featured__item{
-  position: relative;
-  text-decoration: none;
-}
-
-.featured__item::after{
-  content: "";
-  position: absolute;
-  z-index:-1;
-  inset: 0;
-  padding: 100% 100% 0 0;
-  border-radius: 50%;
-  background-color: #2193b0;
-}
-
-.featured__details{
-  color: white;
- 
-}
-
-.price{
-  display: block;
-}
-
-
-/* ======== Breakpoints ========= */
 @media (min-width: 35em) {
-  
-  .split{
-    flex-direction: row;
-  }
-
   .grid {
     grid-template-areas: "one two";
   }
-
 }
 
+/* -------------------- Featured ---------------------- */
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 0.5em);
+  justify-content: center;
+}
+
+.split > * {
+  flex-basis: 25%;
+  min-width: 18em;
+}
+
+.featured {
+  padding-block-start: 5em;
+}
+
+.featured__item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  transform: scale(0.85);
+  transition: transform 0.25s ease-in-out;
+  line-height: 1.2;
+  color: #333;
+}
+
+.featured__item:hover,
+.featured__item:focus {
+  transform: scale(1);
+}
+
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
+}
+
+.featured__item::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 75% 75% 0 0;
+  border-radius: 50%;
+  z-index: -1;
+  background: #2193b0;
+}
+
+.featured__details {
+  opacity: 0;
+  font-size: 1.4rem;
+  font-weight: var(--fw-500);
+  transition: opacity 250ms linear;
+}
+
+.price {
+  display: block;
+  font-size: 1.5em;
+  font-weight: var(--fw-700);
+}
 
 @media (max-width: 58em) {
   /* Navbar */
@@ -314,34 +317,33 @@ section {
     transition: transform 0.35s ease-out;
     --gap: 2em;
   }
-  
+
   .primary_navigation[data-visible="true"] {
     transform: translateX(0%);
   }
-  
+
   .mobile-nav-toggle {
     display: block;
     position: absolute;
     z-index: 9999;
     background-color: transparent;
-    background-image: url(assets/shared/hambuger-menu.svg);
+    background-image: url(assets/shared/icons-hamburger-menu.svg);
     background-repeat: no-repeat;
     width: 2.7rem;
     aspect-ratio: 1;
     border: 0;
-    top: 2.1%;
+    top: 1.5%;
     right: 9%;
   }
-  
+
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url(assets/shared/close-menu.svg);
+    background-image: url(assets/shared/icons-close.svg);
   }
 }
 
 @media (min-width: 58em) {
   /* Navbar */
   .primary_navigation {
-    padding-block: 1em;
     text-transform: uppercase;
   }
 }
